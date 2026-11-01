@@ -13,22 +13,22 @@ let cardsEmeil = document.querySelectorAll('.card-email')
 let cardsRole = document.querySelectorAll('.card-role')
 
 function queryElements() {
-  let i = 0
+  let t = 0
   cardsTitle.forEach((title)=>{
-    title.textContent = users[i].nom
-    i++
+    title.textContent = users[t].nom
+    t++
     
   })
   
-  for (let c = 0; c < cardsEmeil.length; c++) {
-    cardsEmeil[c].textContent = users[c].email
+  for (let e = 0; e < cardsEmeil.length; e++) {
+    cardsEmeil[e].textContent = users[e].email
   }
 
-  let j = 0
+  let r = 0
   for(let role of cardsRole){
-    role.textContent = users[j].role
-    // console.log(j);
-    j++
+    role.textContent = users[r].role
+    // console.log(r);
+    r++
   }
 }
 queryElements()
