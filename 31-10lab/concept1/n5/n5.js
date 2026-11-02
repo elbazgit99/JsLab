@@ -6,27 +6,13 @@ const users = [
 ];
 
 
-let UsersCardId = document.querySelectorAll('[data-user-id]')
-// console.log(UsersCardId);
-console.log(UsersCardId.dataset.userId)
-// console.log(cardId3,cardId1,cardId2,cardId4);
-// console.log(cardId1.dataset.userId)
-// Your table contains user objects, each with a unique ID.
-// Your static HTML Cards have a corresponding data-user-id attribute.
-//  Browse through your array of objects, and for each object,
-//  find the specific HTML Card by its
-//     data attribute (querySelector('[data-user-id="..."]')),
-//     and then fill it in.
+let cardsId = document.querySelectorAll('[data-user-id]')
+// console.log(cardsId);
 
-// let cardId = UsersCardId.dataset.userId
-// console.log(cardId);
 
-function usersId() {
-  UsersCardId.forEach((user => {
-    if (user.id === id3) {
-      console.log(id3);
-      
-    }
-  }))
+function browsObjIds() {
+  let objId = users.find((user) => user.id === 3)
+  console.log(objId);
+  
 }
-usersId()
+
